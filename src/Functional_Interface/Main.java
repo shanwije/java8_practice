@@ -11,10 +11,11 @@ public class Main implements MyI {
 
     }
 
-    @Override
-    public void write2(String s) {
-        System.out.println("from overrided write2 " + s);
-    }
+//    @Override
+//    public void write2(String s) {
+//        System.out.println("from overrided write2 " + s);
+//    }
+
 
     public static void main(String[] args) {
 
