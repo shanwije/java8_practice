@@ -23,6 +23,8 @@ public class Main {
         Greetable ww = Main::printS;
         Greetable zz = m::printsome;
         Greetable gg = new Main()::printsome;
+        //  Greetable aa = new Main()::printInt;
+
 
         gg.greet("XXXXXX");
         zz.greet("YYYYYY");
@@ -43,5 +45,9 @@ public class Main {
 
     public static void printS(String s) {
         System.out.println("from static " + s);
+    }
+
+    public void printInt(int i) {
+        System.out.println("from print Int " + i);
     }
 }
