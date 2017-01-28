@@ -5,6 +5,8 @@ package lamda;
  */
 public class Main {
     public static void main(String[] args) {
-
+        new CreateLamda().sayHello("Shan", (String s) -> {
+            System.out.println("Hello ," + s);
+        });
     }
 }
