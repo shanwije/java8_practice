@@ -1,4 +1,4 @@
-package lamda;
+package lambda;
 
 /**
  * Created by shan on 1/28/17.
