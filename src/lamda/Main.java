@@ -18,6 +18,12 @@ public class Main {
         });
 
         t.start();
+        new Main().myThread(() -> System.out.println("hello from lambda"));
 
+    }
+
+    public void myThread(Runnable r) {
+        Thread t = new Thread(r);
+        t.start();
     }
 }
