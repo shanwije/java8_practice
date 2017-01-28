@@ -9,21 +9,20 @@ public class Main {
             System.out.println("Hello ," + s);
         });
 
-        Thread t = new Thread(new Runnable() {
-            @Override
-            public void run() {
+        Greetable gg = new Main()::printsome;
 
-                System.out.println("hey guys");
-            }
-        });
-
-        t.start();
+        gg.greet("XXXXXX");
         new Main().myThread(() -> System.out.println("hello from lambda"));
+
 
     }
 
     public void myThread(Runnable r) {
         Thread t = new Thread(r);
         t.start();
+    }
+
+    public void printsome(String s) {
+        System.out.println(s);
     }
 }
