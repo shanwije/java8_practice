@@ -8,5 +8,16 @@ public class Main {
         new CreateLamda().sayHello("Shan", (String s) -> {
             System.out.println("Hello ," + s);
         });
+
+        Thread t = new Thread(new Runnable() {
+            @Override
+            public void run() {
+
+                System.out.println("hey guys");
+            }
+        });
+
+        t.start();
+
     }
 }
